@@ -1,0 +1,24 @@
+17990282
+READ ME DOC FOR CABSONLINE!
+
+BOOKING.HTML:
+
+1.) run booking.html
+2.) Enter valid details and click 'book' button to book your ride.
+3.) Click the 'reset' button to reset the form.
+4.) Once your ride has been booked, the details of your booking shall be 
+returned on the bottom of the screen including the booking reference number, 
+pick up time, and pick up date.
+
+ADMIN.HTML:
+
+1.) Run admin.html
+2.) Click the 'show bookings' button to retrieve all the booking entries that
+are 'unassigned' and with a pick up time within 2 hours from now only. (Shall be displayed in a table format)
+3.) The input text box and the 'Assign Taxi' buttonbelow the button shall be enabled.
+4.) Enter a reference number of a booking entry as shown in the table below and click the 'Assign Taxi' button 
+to assign a taxi to that specific booking entry.
+5.) The booking entry with the reference number you have entered should have been removed from the table below
+as a taxi is now assigned to that entry.
+
+

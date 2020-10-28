@@ -1,0 +1,38 @@
+<!-- 17990282 -->
+<!-- This html file is responsible for the admin page. It contains a form with a method GET to recieve the reference number and 
+2 buttons which are responsible for showing the bookings and assigning taxis to the provided reference number-->
+<!-- A single div tag is visible with the ID 'Display' below, this area is where the table with all the bookings will appear-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Booking Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="bookingManager.js"></script>
+  </head>
+
+  <body>
+    <h1>Admin Cab Booking Page</h1>
+    <input
+      type="button"
+      name="showBookingsButton"
+      value="ShowBookings"
+      onclick="buttonClicked('show')"
+    /><br /><br />
+    <form method="GET">
+      <input type="text" id="refInput" disabled /><br /><br />
+      <input
+        type="button"
+        name="assignButton"
+        value="Assign Taxi"
+        id="assignButton"
+        disabled
+        onclick="buttonClicked('assign', document.getElementById('refInput').value)"
+        )
+      />
+    </form>
+    <br />
+
+    <div id="Display"></div>
+  </body>
+</html>

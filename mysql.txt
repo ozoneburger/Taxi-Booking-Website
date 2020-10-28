@@ -1,0 +1,5 @@
+!THIS TEXT FILE CONTAINS THE MYSQL COMMANDS THAT ARE USED TO CREATE THE DATABASE!
+!NOTE! THE DATABASE HAS BEEN CREATED THROUGH THE phpMyAdmin SQL query runner on TurnKey! NOT THROUGH THE FILES in this folder!
+
+CREATE TABLE cabsOnline (refNum int(11) AUTO_INCREMENT PRIMARY KEY, custName VARCHAR(50), phone VARCHAR(20), unitNum int(10), streetNum int(10), streetName VARCHAR(100), 
+suburbName VARCHAR(50), destination VARCHAR(50), pickUpDate date, pickUpTime time, bookingstatus VARCHAR(50), currDate date, currTime time);

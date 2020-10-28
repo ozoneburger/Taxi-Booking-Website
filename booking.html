@@ -1,0 +1,53 @@
+<!--17990282-->
+<!-- This html file is responsible for displaying the UI for the booking page. It has a form where details for the cab booking are required.
+It also includes two javascript files in order to become an AJAX application. There are also two buttons which are responsible for submitting the 
+user data provided and reseting the form values-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <center><h1>CabsOnline</h1></center>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="bookingManager.js"></script>
+  </head>
+
+  <body>
+    <form id="form" method="GET">
+      <label>Details</label><br /><br />
+      <label>Customer Name: </label>
+      <input type="text" id="custName" required /><br /><br />
+      <label>Contact Phone: </label>
+      <input type="text" id="phoneNum" required /><br /><br />
+      <label>Pick-up Address</label><br /><br />
+      <label>Unit: </label>
+      <input type="text" id="unitNum" /><label> (Optional)</label><br /><br />
+      <label>Street Number: </label>
+      <input type="text" id="streetNum" required /><br /><br />
+      <label>Street: </label>
+      <input type="text" id="streetName" required /><br /><br />
+      <label>Suburb: </label>
+      <input type="text" id="suburbName" required /><br /><br />
+      <label>Destination Address: </label>
+      <input type="text" id="destination" required /><br /><br />
+      <label>Pick-up date: </label>
+      <input type="date" id="pickUpDate" required /><br /><br />
+      <label>Pick-up time: </label>
+      <input type="time" id="pickUpTime" required /><br /><br />
+
+      <input
+        type="button"
+        id="bookButton"
+        value="Book"
+        class="buttons"
+        onclick="processBooking('bookingProcess.php', 'bookingDisplay', document.getElementById('custName').value, document.getElementById('phoneNum').value,
+        document.getElementById('unitNum').value, document.getElementById('streetNum').value, document.getElementById('streetName').value, document.getElementById('suburbName').value,
+        document.getElementById('destination').value, document.getElementById('pickUpDate').value, document.getElementById('pickUpTime').value)"
+        ;
+      />
+      <input type="reset" id="Reset" />
+    </form>
+
+    <div id="bookingDisplay"></div>
+  </body>
+</html>
